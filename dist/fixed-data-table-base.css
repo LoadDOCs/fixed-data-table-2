@@ -221,6 +221,12 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   top: 0;
 }
 
+.fixedDataTableRowLayout_rowExpanded {
+  box-sizing: border-box;
+  left: 0;
+  position: absolute;
+}
+
 .fixedDataTableRowLayout_fixedColumnsDivider {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -261,10 +267,8 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   outline: none;
   overflow: hidden;
   position: absolute;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -275,8 +279,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   bottom: 0;
   right: 0;
   top: 0;
-  -webkit-transition-property: background-color width;
-          transition-property: background-color width;
+  transition-property: background-color width;
   width: 15px;
 }
 
@@ -289,8 +292,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   bottom: 0;
   height: 15px;
   left: 0;
-  -webkit-transition-property: background-color height;
-          transition-property: background-color height;
+  transition-property: background-color height;
 }
 
 /* Touching the scroll-track directly makes the scroll-track bolder */
@@ -317,8 +319,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   content: '';
   display: block;
   position: absolute;
-  -webkit-transition: background-color 250ms ease;
-          transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
 }
 
 .ScrollbarLayout_faceHorizontal {
